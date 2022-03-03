@@ -2,7 +2,7 @@
 #Week 5 task
 # Using this link to find how to import day of the week
 #https://www.delftstack.com/howto/python/python-datetime-day-of-week/
-#
+# 
 
 from datetime import datetime
 
