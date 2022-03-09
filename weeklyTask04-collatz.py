@@ -6,18 +6,20 @@
 #using While not 1 to stop program when it reaches 1
 #Using elif to decide between odd or even using % 2 = 0 to prove even
 #
-#
+# Using floor division to stop int printing as a float when divided 
+# https://stackoverflow.com/questions/56799336/how-to-stop-python-from-converting-int-to-float
 #Author: Jamie Roche
 
-num = int(input("Please enter a positive integer: "))
-
-while num != 1:
-    if num < 0:
+num = int(input("Please only enter a positive integer: "))
+while num < 0:
         num = int(input("Please only enter a positive integer: "))
-    elif ((num%2) == 0):
-        num = num /2 
-        print (str(num))
+
+print (num, end = " ")
+while num != 1:
+    if ((num%2) == 0):
+        num = num //2 
+        print (num,end = " ")
     else:
         num = (num * 3) + 1
-        print (str(num))
+        print (num,end = " ")
     
