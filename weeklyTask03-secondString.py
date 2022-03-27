@@ -5,8 +5,7 @@
 
 ############################################################################
 # Redo of code to minimise the amout of lines required ot complete the task
-#
-#
+
 inputString2 = input('enter a string:') # Take input from user
 
 textOut = inputString2[::-2] # reverse string and have every second character
