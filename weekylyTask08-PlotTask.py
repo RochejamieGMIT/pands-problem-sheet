@@ -14,7 +14,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-xpoints = np.arange(0.,4.0,0.0001)
+xpoints = np.arange(0.,4.0,0.001)
 # Using np.arange instead of np.array as I can set the sampleing frequecny, 
 # using a smaller smapling frquency the graphs are smoother. Also, the longer sampling time made the lines not apear to quite reach
 # 4 on the x axis

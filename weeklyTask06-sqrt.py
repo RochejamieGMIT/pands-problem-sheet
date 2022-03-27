@@ -16,18 +16,20 @@ def sqrt(toRoot, rError) :
  
         # check to see if the differce is within the allowable margin
         if (abs(root - x) < rError) :
-            check = True
+            check = True 
  
         x = root
  
     return root # Return the square root of the number
 
 #Reusing the code for the correct input type to allow different numbers to be squared
-def readNum(message = "enter a number "):
+def readNum(message = "enter a positive number "):
     num = False
     while(num == False):
         try:
-         num = int(input(message))
+         num = float(input(message))
+         while num < 0 :
+            num = float(input("Please only enter a positive number: "))
         except ValueError:
           print("just numbers no letters ",end ='')
     return num
@@ -35,7 +37,7 @@ def readNum(message = "enter a number "):
     
 
 numToRoot = readNum() # Read in number to find root of
-accuracy  = 0.000000000000001 # Read in number to determine required accuaracy of estimate
+accuracy  = 0.0000000000001 # Read in number to determine required accuaracy of estimate
 
 sqroot = (sqrt(numToRoot, accuracy)) # Choosing to set the returned value to a variale before printing out incase other calculations could be required
 
